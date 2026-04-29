@@ -1,0 +1,90 @@
+:root {
+  --bg: #f5f7fb;
+  --surface: #ffffff;
+  --heading-color: #18243a;
+  --text: #556277;
+  --muted: #6b7890;
+  --accent: #2f8f57;
+  --accent-soft: #79b68e;
+  --border: #dde4ee;
+  --border-strong: #cfd7e3;
+  --shadow-card: 0 12px 30px rgba(18, 31, 58, 0.06);
+  --shadow-soft: 0 10px 24px rgba(18, 31, 58, 0.12);
+  --heading: 'Georgia', 'Times New Roman', serif;
+  --sans: 'Trebuchet MS', 'Segoe UI', sans-serif;
+
+  font-family: var(--sans);
+  line-height: 1.6;
+  font-weight: 400;
+  color: var(--text);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: var(--bg);
+}
+
+a,
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+a {
+  color: inherit;
+}
+
+#root {
+  width: min(1180px, calc(100% - 2rem));
+  margin: 0 auto;
+  padding-bottom: 3rem;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  color: var(--heading-color);
+  font-family: var(--heading);
+  line-height: 1.08;
+}
+
+h1 {
+  font-size: clamp(3rem, 6vw, 5.15rem);
+  letter-spacing: -0.045em;
+  max-width: 11ch;
+}
+
+h2 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  letter-spacing: -0.03em;
+}
+
+h3 {
+  font-size: 1.45rem;
+  margin-bottom: 0.75rem;
+}
+
+p {
+  margin: 0;
+}
+
+@media (max-width: 720px) {
+  #root {
+    width: min(100% - 1rem, 42rem);
+  }
+}
